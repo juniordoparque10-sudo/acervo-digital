@@ -1,0 +1,113 @@
+.reader-sidebar {
+  min-width: 0;
+  display: grid;
+  gap: 14px;
+  align-content: start;
+}
+
+.reader-sidebar__panel {
+  padding: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 22px;
+  color: #dbeafe;
+  background: rgba(15, 23, 42, 0.7);
+  box-shadow: 0 18px 42px rgba(2, 6, 23, 0.18);
+}
+
+.reader-sidebar__title {
+  margin-bottom: 12px;
+  color: #93c5fd;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.reader-sidebar__title span {
+  font-size: 0.76rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.reader-sidebar__panel > strong {
+  display: block;
+  color: #ffffff;
+  font-size: 1.25rem;
+}
+
+.reader-sidebar__panel p {
+  margin: 8px 0 14px;
+  color: #aebed3;
+  font-size: 0.88rem;
+  line-height: 1.55;
+}
+
+.reader-sidebar__panel > button,
+.reader-sidebar__chapters button {
+  width: 100%;
+  min-height: 44px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 14px;
+  color: #ffffff;
+  background: rgba(37, 99, 235, 0.78);
+  font-weight: 800;
+}
+
+.reader-sidebar__chapters {
+  display: grid;
+  gap: 8px;
+}
+
+.reader-sidebar__chapters button {
+  padding: 10px 12px;
+  background: rgba(255, 255, 255, 0.07);
+  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.reader-sidebar__chapters button:hover {
+  background: rgba(37, 99, 235, 0.72);
+}
+
+.reader-sidebar__chapters small {
+  color: #93c5fd;
+  white-space: nowrap;
+}
+
+.reader-sidebar__meta {
+  margin: 0 0 16px;
+  display: grid;
+  gap: 10px;
+}
+
+.reader-sidebar__meta div {
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.09);
+}
+
+.reader-sidebar__meta dt {
+  color: #93a4bd;
+  font-size: 0.75rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.reader-sidebar__meta dd {
+  margin: 3px 0 0;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+@media (max-width: 1180px) {
+  .reader-sidebar {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 820px) {
+  .reader-sidebar {
+    grid-template-columns: 1fr;
+  }
+}

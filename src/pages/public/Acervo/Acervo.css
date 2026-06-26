@@ -1,0 +1,129 @@
+.catalog-page {
+  width: min(1180px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 58px 0 28px;
+}
+
+.catalog-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 420px);
+  gap: 24px;
+  align-items: end;
+}
+
+.catalog-search {
+  min-height: 58px;
+  padding: 0 18px;
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+  background: #ffffff;
+  box-shadow: var(--shadow-soft);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.catalog-search svg {
+  color: var(--color-primary);
+}
+
+.catalog-search input {
+  width: 100%;
+  min-width: 0;
+  border: 0;
+  outline: 0;
+  color: var(--color-text);
+  background: transparent;
+}
+
+.catalog-grid {
+  margin-top: 34px;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.catalog-card {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  background: #ffffff;
+  box-shadow: var(--shadow-soft);
+  overflow: hidden;
+}
+
+.catalog-card__cover {
+  min-height: 170px;
+  padding: 20px;
+  color: #ffffff;
+  background: linear-gradient(135deg, #1d4ed8, #38bdf8);
+  display: flex;
+  justify-content: space-between;
+}
+
+.catalog-card__cover span {
+  font-weight: 800;
+}
+
+.catalog-card__content {
+  padding: 20px;
+}
+
+.catalog-card__content > span {
+  color: var(--color-primary);
+  font-size: 0.75rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.catalog-card h2 {
+  margin: 12px 0 8px;
+  color: var(--color-text);
+  font-size: 1.1rem;
+  line-height: 1.25;
+}
+
+.catalog-card p {
+  margin: 0;
+  color: var(--color-muted);
+}
+
+.catalog-card__meta {
+  margin-top: 18px;
+  padding-top: 16px;
+  border-top: 1px solid var(--color-border);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.catalog-card__meta strong,
+.catalog-card__meta small {
+  color: var(--color-muted);
+}
+
+.catalog-card a {
+  margin-top: 18px;
+  color: var(--color-primary);
+  text-decoration: none;
+  font-weight: 800;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+}
+
+@media (max-width: 1000px) {
+  .catalog-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 720px) {
+  .catalog-hero,
+  .catalog-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .catalog-search {
+    border-radius: 22px;
+  }
+}

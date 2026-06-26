@@ -1,0 +1,117 @@
+.reader-header {
+  padding: 18px;
+  border: 1px solid rgba(226, 232, 240, 0.14);
+  border-radius: 24px;
+  background: rgba(15, 23, 42, 0.72);
+  backdrop-filter: blur(18px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+}
+
+.reader-header__identity {
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.reader-header__back {
+  min-height: 42px;
+  padding: 0 14px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 999px;
+  color: #dbeafe;
+  text-decoration: none;
+  font-weight: 800;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
+}
+
+.reader-header__identity span {
+  color: #93c5fd;
+  font-size: 0.76rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.reader-header__identity h1 {
+  margin: 4px 0 0;
+  color: #ffffff;
+  font-size: clamp(1.1rem, 2vw, 1.45rem);
+  line-height: 1.2;
+}
+
+.reader-header__actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+.reader-header__actions button {
+  min-height: 42px;
+  padding: 0 12px;
+  border: 1px solid rgba(255, 255, 255, 0.13);
+  border-radius: 999px;
+  color: #dbeafe;
+  background: rgba(255, 255, 255, 0.08);
+  font-weight: 800;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.reader-header__actions button:hover,
+.reader-header__actions button.is-active {
+  color: #ffffff;
+  background: rgba(37, 99, 235, 0.82);
+}
+
+@media (max-width: 1040px) {
+  .reader-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .reader-header__actions {
+    width: 100%;
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 640px) {
+  .reader-header {
+    padding: 14px;
+    border-radius: 18px;
+  }
+
+  .reader-header__identity {
+    width: 100%;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .reader-header__back {
+    min-height: 44px;
+  }
+
+  .reader-header__actions {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .reader-header__actions button {
+    min-height: 44px;
+    justify-content: center;
+    padding: 0 8px;
+  }
+
+  .reader-header__actions button span {
+    display: none;
+  }
+}

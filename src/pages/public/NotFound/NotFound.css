@@ -1,0 +1,42 @@
+.not-found-page {
+  width: min(760px, calc(100% - 32px));
+  min-height: 58vh;
+  margin: 0 auto;
+  padding: 70px 0 30px;
+  display: grid;
+  place-items: center;
+}
+
+.not-found-card {
+  width: 100%;
+  padding: clamp(30px, 6vw, 56px);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  background: #ffffff;
+  box-shadow: var(--shadow-soft);
+  text-align: center;
+}
+
+.not-found-card svg,
+.not-found-card span {
+  color: var(--color-primary);
+}
+
+.not-found-card span {
+  display: block;
+  margin-top: 16px;
+  font-weight: 900;
+}
+
+.not-found-card h1 {
+  margin: 10px 0;
+  color: var(--color-text);
+  font-size: clamp(2rem, 5vw, 3.4rem);
+}
+
+.not-found-card p {
+  margin: 0 auto 24px;
+  max-width: 460px;
+  color: var(--color-muted);
+  line-height: 1.7;
+}
