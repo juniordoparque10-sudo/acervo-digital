@@ -1,5 +1,6 @@
-import { BookOpen, LogIn, Search } from "lucide-react";
+import { LogIn, Search } from "lucide-react";
 import { Link, NavLink } from "react-router-dom";
+import BrandMark from "../../brand/BrandMark/BrandMark";
 import "./Navbar.css";
 
 export default function Navbar() {
@@ -7,7 +8,7 @@ export default function Navbar() {
     <header className="navbar">
       <Link to="/" className="navbar__brand">
         <div className="navbar__logo">
-          <BookOpen size={24} />
+          <BrandMark variant="isotipo" />
         </div>
 
         <div>
@@ -17,7 +18,7 @@ export default function Navbar() {
       </Link>
 
       <nav className="navbar__links">
-        <NavLink to="/">Início</NavLink>
+        <NavLink to="/">Inicio</NavLink>
         <NavLink to="/acervo">Acervo</NavLink>
         <a href="/#recursos">Recursos</a>
         <a href="/#portal">Portal</a>

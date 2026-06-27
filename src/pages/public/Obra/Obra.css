@@ -27,7 +27,7 @@
   padding: 30px;
   border-radius: var(--radius-lg);
   color: #ffffff;
-  background: linear-gradient(135deg, #1d4ed8, #0ea5e9);
+  background: linear-gradient(135deg, var(--brand-blue-dark), var(--brand-cyan));
   box-shadow: var(--shadow-blue);
   display: flex;
   flex-direction: column;

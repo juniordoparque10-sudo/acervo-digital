@@ -4,8 +4,8 @@
   border-radius: 32px;
   color: #ffffff;
   background:
-    radial-gradient(circle at 18% 12%, rgba(37, 99, 235, 0.3), transparent 34%),
-    linear-gradient(135deg, #07111f 0%, #0f172a 48%, #12234a 100%);
+    radial-gradient(circle at 18% 12%, rgba(62, 176, 230, 0.22), transparent 34%),
+    linear-gradient(135deg, #07111f 0%, var(--brand-navy) 48%, var(--brand-blue-dark) 100%);
   box-shadow: 0 28px 90px rgba(2, 6, 23, 0.34);
   display: grid;
   gap: 18px;
@@ -13,8 +13,8 @@
 
 .reader-shell--light {
   background:
-    radial-gradient(circle at 18% 12%, rgba(56, 189, 248, 0.22), transparent 34%),
-    linear-gradient(135deg, #eaf3ff 0%, #f8fafc 48%, #dbeafe 100%);
+    radial-gradient(circle at 18% 12%, rgba(62, 176, 230, 0.2), transparent 34%),
+    linear-gradient(135deg, var(--brand-ice) 0%, #f7fbff 48%, #d7ecfb 100%);
 }
 
 .reader-shell--light .reader-header,
@@ -25,7 +25,7 @@
 
 .reader-shell--fullscreen {
   border-radius: 18px;
-  box-shadow: 0 0 0 1px rgba(56, 189, 248, 0.22), 0 32px 100px rgba(37, 99, 235, 0.24);
+  box-shadow: 0 0 0 1px rgba(62, 176, 230, 0.22), 0 32px 100px rgba(18, 58, 90, 0.24);
 }
 
 .reader-shell__layout {
@@ -53,6 +53,6 @@
     padding: 12px;
     border-radius: 0;
     gap: 14px;
-    background: linear-gradient(180deg, #0f172a, #12234a);
+    background: linear-gradient(180deg, var(--brand-navy), var(--brand-blue-dark));
   }
 }

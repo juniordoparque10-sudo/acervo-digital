@@ -1,8 +1,8 @@
 .reader-placeholder {
   padding: 18px;
-  border: 1px solid rgba(37, 99, 235, 0.16);
+  border: 1px solid rgba(30, 96, 145, 0.16);
   border-radius: var(--radius-lg);
-  background: linear-gradient(135deg, #eff6ff, #ffffff);
+  background: linear-gradient(135deg, var(--brand-ice), #ffffff);
   box-shadow: var(--shadow-blue);
 }
 
@@ -41,7 +41,7 @@
   min-height: 410px;
   padding: 14px;
   border-radius: 24px;
-  background: linear-gradient(90deg, #f8fafc, #ffffff 49%, #dbeafe 50%, #ffffff 51%, #f8fafc);
+  background: linear-gradient(90deg, #f7fbff, #ffffff 49%, var(--brand-ice) 50%, #ffffff 51%, #f7fbff);
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 10px;

@@ -13,14 +13,14 @@
 
 .button--primary {
   color: #ffffff;
-  background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
-  box-shadow: 0 16px 32px rgba(37, 99, 235, 0.22);
+  background: linear-gradient(135deg, var(--brand-blue-dark), var(--brand-blue));
+  box-shadow: 0 16px 32px rgba(18, 58, 90, 0.24);
 }
 
 .button--secondary {
   color: var(--color-primary);
   background: #ffffff;
-  border-color: rgba(37, 99, 235, 0.18);
+  border-color: rgba(30, 96, 145, 0.18);
 }
 
 .public-layout {

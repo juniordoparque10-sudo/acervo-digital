@@ -55,7 +55,7 @@
   min-height: 170px;
   padding: 20px;
   color: #ffffff;
-  background: linear-gradient(135deg, #1d4ed8, #38bdf8);
+  background: linear-gradient(135deg, var(--brand-blue-dark), var(--brand-cyan));
   display: flex;
   justify-content: space-between;
 }

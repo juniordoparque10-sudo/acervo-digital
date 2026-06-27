@@ -1,0 +1,32 @@
+.brand-mark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.brand-mark img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.brand-mark svg {
+  color: #ffffff;
+}
+
+.brand-mark--isotipo {
+  width: 100%;
+  height: 100%;
+}
+
+.brand-mark--horizontal {
+  width: 180px;
+  height: 42px;
+}
+
+.brand-mark--vertical {
+  width: 118px;
+  height: 96px;
+}

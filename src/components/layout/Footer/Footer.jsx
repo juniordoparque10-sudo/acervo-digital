@@ -1,4 +1,4 @@
-import { BookOpen } from "lucide-react";
+import BrandMark from "../../brand/BrandMark/BrandMark";
 import { demoInstitution } from "../../../data/demoData";
 import "./Footer.css";
 
@@ -7,7 +7,7 @@ export default function Footer() {
     <footer className="footer" id="contato">
       <div className="footer__brand">
         <div className="footer__logo">
-          <BookOpen size={22} />
+          <BrandMark variant="isotipo" />
         </div>
 
         <div>
